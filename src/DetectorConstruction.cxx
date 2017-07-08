@@ -52,7 +52,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 	G4VPhysicalVolume* physWorld = new G4PVPlacement(
 			0, 					//no rotation
 			G4ThreeVector(),	//at (0,0,0)
-			logicWorld,			//contataing logical volume
+			logicWorld,			//containing logical volume
 			"World",				//name
 			0,						//no mother volume
 			false,				//no boolean operation
@@ -65,7 +65,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 	return physWorld;
 }
 
-/**In this routine we construct the Senditive Detector (SD). This is where the scorers are registered.
+/**In this routine we construct the Sensitive Detector (SD). This is where the scorers are registered.
  */
 void DetectorConstruction::ConstructSDandField() 
 {
